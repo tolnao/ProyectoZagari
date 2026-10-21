@@ -27,32 +27,59 @@ body{
     background-color: white;
 
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
     grid-template-columns: 250px 1fr 120px;
     align-items: center;
 
-    padding: 0 65px;
+    padding: 0 50px;
 }
 .marca {
     display: flex;
     align-items: center;
-    gap: 16px;
     gap: 15px;
 }
 
 .logo {
-    width: 45px;
-    height: 45px;
-
-    display: flex;
-    justify-content: center;
-
-    font-family: Georgia, serif;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 .marca h1 {
     font-family: Georgia, serif;
-    font-size: 26px;
+    font-size: 27px;
     font-weight: normal;
-    letter-spacing: 1px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+.menu a {
+    color: #111111;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    padding: 8px 0;
+    position: relative;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #c6a15b;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.menu .activo::after {
+    width: 100%;
 }
