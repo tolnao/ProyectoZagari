@@ -7,3 +7,55 @@
 body{
     background-color: #FAF4EE;
 }
+.barra-superior {
+    height: 28px;
+    background-color: #111111;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 65px;
+
+    font-family: Georgia, serif;
+    font-size: 11px;
+}
+
+.encabezado {
+    height: 82px;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+
+    padding: 0 65px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #c6a15b;
+
+    font-family: Georgia, serif;
+    font-size: 22px;
+}
+
+.marca h1 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
