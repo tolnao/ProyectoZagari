@@ -232,7 +232,7 @@ body{
     font-weight: normal;
     color: #c89f52;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .descubre .titulo-descubre {
@@ -269,32 +269,6 @@ body{
     max-width: 90%;
 
     margin: 0 auto;
-<<<<<<< HEAD
-=======
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 90px;
-}
-
-.tarjeta {
-    height: 220px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 4px;
-}
-
-.tarjeta >img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.tarjeta-info {
-    position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 12px;
->>>>>>> b7a96a99c8c6a9ddf16553f386a420ef919d28de
 
     display: flex;
     justify-content: space-between;
@@ -361,7 +335,6 @@ body{
 }
 
 
-<<<<<<< HEAD
 
 
 .descubre .tarjeta-info span {
@@ -451,11 +424,4 @@ body{
 .icono-corazon {
     font-size: 24px;
     color: #c89f52;
-=======
-.flecha-icono{
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
-    color:white;
->>>>>>> b7a96a99c8c6a9ddf16553f386a420ef919d28de
 }
