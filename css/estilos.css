@@ -152,3 +152,56 @@ body{
     top: 3px;
     right: 3px;
 }
+.hero {
+    height: 430px;
+
+    background-image: url("../img/bolsa.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 70px;
+}
+
+.hero-texto h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 1.05;
+
+    margin-bottom: 12px;
+}
+
+.hero-texto h2 span {
+    color: #c6a15b;
+}
+
+.hero-texto p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+.boton-catalogo {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+
+    background-color: black;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 18px;
+
+    font-family: Georgia, serif;
+    font-size: 14px;
+}
+
+.boton-catalogo:hover {
+    background-color: #c6a15b;
+}
