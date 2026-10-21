@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #FAF4EE;
+body {
+    background-color: #f7f0e8;
+    color: #111111;
 }
+
 .barra-superior {
     height: 28px;
     background-color: #111111;
@@ -16,56 +18,64 @@ body{
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 65px;
+    padding: 0 85px;
 
     font-family: Georgia, serif;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .encabezado {
-    height: 82px;
+    height: 108px;
     background-color: white;
 
     display: grid;
     grid-template-columns: 250px 1fr 120px;
     align-items: center;
 
-    padding: 0 50px;
+    padding: 0 65px;
 }
+
 .marca {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 18px;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     object-fit: contain;
 }
 
 .marca h1 {
     font-family: Georgia, serif;
-    font-size: 27px;
+    font-size: 32px;
     font-weight: normal;
+    letter-spacing: 1px;
 }
+
 .menu {
     display: flex;
     justify-content: center;
-    gap: 55px;
+    align-items: center;
+    gap: 65px;
 }
 
 .menu a {
     color: #111111;
     text-decoration: none;
+
     font-family: Georgia, serif;
-    font-size: 15px;
+    font-size: 16px;
+
     padding: 8px 0;
+
     position: relative;
 }
 
 .menu a::after {
     content: "";
+
     position: absolute;
     left: 0;
     bottom: 0;
@@ -73,26 +83,28 @@ body{
     width: 0;
     height: 2px;
 
-    background-color: #c6a15b;
+    background-color: #c89f52;
+
+    transition: 0.3s;
 }
 
-.menu a:hover::after {
-    width: 100%;
-}
-
+.menu a:hover::after,
 .menu .activo::after {
     width: 100%;
 }
+
 .acciones {
     display: flex;
     justify-content: flex-end;
-    gap: 25px;
+    align-items: center;
+    gap: 28px;
 }
-.icono-buscar {
-    width: 20px;
-    height: 20px;
 
-    border: 2px solid black;
+.icono-buscar {
+    width: 22px;
+    height: 22px;
+
+    border: 2px solid #111111;
     border-radius: 50%;
 
     position: relative;
@@ -101,24 +113,24 @@ body{
 .icono-buscar::after {
     content: "";
 
-    width: 8px;
+    width: 9px;
     height: 2px;
 
-    background-color: black;
+    background-color: #111111;
 
     position: absolute;
-
-    right: -6px;
-    bottom: -3px;
+    right: -7px;
+    bottom: -4px;
 
     transform: rotate(45deg);
 }
-.icono-instagram {
-    width: 24px;
-    height: 24px;
 
-    border: 2px solid black;
-    border-radius: 6px;
+.icono-instagram {
+    width: 26px;
+    height: 26px;
+
+    border: 2px solid #111111;
+    border-radius: 7px;
 
     position: relative;
 }
@@ -126,16 +138,15 @@ body{
 .icono-instagram::before {
     content: "";
 
-    width: 8px;
-    height: 8px;
+    width: 9px;
+    height: 9px;
 
-    border: 2px solid black;
+    border: 2px solid #111111;
     border-radius: 50%;
 
     position: absolute;
-
-    top: 5px;
-    left: 5px;
+    top: 6px;
+    left: 6px;
 }
 
 .icono-instagram::after {
@@ -144,39 +155,38 @@ body{
     width: 3px;
     height: 3px;
 
-    background-color: black;
+    background-color: #111111;
     border-radius: 50%;
 
     position: absolute;
-
-    top: 3px;
-    right: 3px;
+    top: 4px;
+    right: 4px;
 }
+
 .hero {
-    height: 245px;
+    height: 320px;
 
     background-image: url("../img/hero-inicio.jpeg");
     background-size: cover;
     background-position: center 68%;
     background-repeat: no-repeat;
 
-    display: flex;
-    align-items: center;
-
-    padding-left: 55px;
+    position: relative;
 }
 
 .hero-texto {
-    width: 300px;
+    position: absolute;
+    left: 75px;
+    top: 42px;
 }
 
 .hero-texto h2 {
     font-family: Georgia, serif;
-    font-size: 34px;
+    font-size: 42px;
     font-weight: normal;
-    line-height: 1.15;
+    line-height: 1.12;
 
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .hero-texto h2 span {
@@ -185,10 +195,10 @@ body{
 
 .hero-texto p {
     font-family: Georgia, serif;
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.55;
 
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .boton-catalogo {
@@ -196,48 +206,82 @@ body{
     align-items: center;
     justify-content: space-between;
 
-    gap: 25px;
+    gap: 32px;
 
     background-color: #000000;
     color: white;
 
     text-decoration: none;
 
-    padding: 10px 15px;
+    padding: 12px 18px;
 
     font-family: Georgia, serif;
-    font-size: 13px;
+    font-size: 15px;
 
     border-radius: 2px;
 }
 
 .boton-catalogo span {
-    font-size: 22px;
+    font-size: 23px;
 }
 
-.boton-catalogo:hover {
-    background-color: #000000;
+.detalles-hero {
+    position: absolute;
+
+    left: 135px;
+    bottom: 10px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 80px;
+}
+
+.detalle-hero {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    color: #c89f52;
+}
+
+.detalle-hero p {
+    margin: 0;
+
+    font-family: Georgia, serif;
+    font-size: 10px;
+
+    color: #c89f52;
+}
+
+.icono-regalo,
+.icono-corazon {
+    font-size: 25px;
+    color: #c89f52;
 }
 
 .descubre {
     background-color: #f7f0e8;
-    padding: 4px 0 10px;
+    padding: 12px 0 12px;
 }
 
-
-.descubre .frase-marca {
+.frase-marca {
     text-align: center;
+
     font-family: Georgia, serif;
-    font-size: 6px;
-    font-weight: normal;
+    font-size: 8px;
+
     color: #c89f52;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+    margin-top: 7px;
+    margin-bottom: 5px;
 }
 
-.descubre .titulo-descubre {
-    width: 850px;
+.titulo-descubre {
+    width: 870px;
     max-width: 90%;
+
     margin: 0 auto 18px;
 
     display: flex;
@@ -247,24 +291,25 @@ body{
     gap: 40px;
 }
 
-.descubre .titulo-descubre h2 {
+.titulo-descubre h2 {
     margin: 0;
 
     font-family: Georgia, serif;
-    font-size: 29px;
+    font-size: 30px;
     font-weight: normal;
 
     white-space: nowrap;
 }
 
-.descubre .titulo-descubre .linea {
+.linea {
     flex: 1;
-    height: 1.5px;
+
+    height: 2px;
+
     background-color: #c89f52;
 }
 
-
-.descubre .categorias {
+.categorias {
     width: 850px;
     max-width: 90%;
 
@@ -274,154 +319,227 @@ body{
     justify-content: space-between;
     align-items: center;
 
-    gap: 0;
+    gap: 70px;
 }
 
-
-.descubre .tarjeta {
-    width: 205px;
+.tarjeta {
+    width: 210px;
     height: 215px;
 
-    flex: 0 0 205px;
+    flex: 0 0 210px;
 
     position: relative;
     overflow: hidden;
 
-    border-radius: 4px;
-
-    margin: 0;
-    padding: 0;
+    border-radius: 5px;
 }
 
-
-.descubre .tarjeta img {
-    display: block;
-
+.tarjeta img {
     width: 100%;
     height: 100%;
 
-    object-fit: cover;
+    display: block;
 
-    margin: 0;
-    padding: 0;
+    object-fit: cover;
 }
 
-
-.descubre .tarjeta-info {
+.tarjeta-info {
     position: absolute;
 
-    left: 12px;
-    right: 10px;
-    bottom: 10px;
+    left: 14px;
+    right: 12px;
+    bottom: 12px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     color: white;
-
-    margin: 0;
-    padding: 0;
 }
 
-.descubre .tarjeta-info h3 {
+.tarjeta-info h3 {
     margin: 0;
 
     font-family: Georgia, serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: normal;
 
     color: white;
 }
 
-
-
-
-.descubre .tarjeta-info span {
-    width: 23px;
-    height: 23px;
+.tarjeta-info span {
+    width: 25px;
+    height: 25px;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     border: 1px solid white;
     border-radius: 50%;
 
-    font-size: 13px;
     color: white;
+    font-size: 14px;
 }
 
+.instagram-inferior {
+    width: 620px;
+    max-width: 80%;
 
-
-
-.descubre .instagram-inferior {
-    width: 520px;
-    max-width: 75%;
-
-    margin: 12px auto 0;
+    margin: 15px auto 0;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    gap: 22px;
+    gap: 25px;
 }
 
-.descubre .linea-instagram {
+.linea-instagram {
     flex: 1;
-    height: 1.5px;
+
+    height: 2px;
 
     background-color: #c89f52;
 }
 
-.descubre .instagram-texto {
+.instagram-texto {
     display: flex;
     align-items: center;
 
-    gap: 10px;
+    gap: 12px;
 
     white-space: nowrap;
 }
 
-.descubre .instagram-texto p {
+.instagram-texto .icono-instagram {
+    width: 20px;
+    height: 20px;
+}
+
+.instagram-texto .icono-instagram::before {
+    width: 7px;
+    height: 7px;
+
+    top: 4px;
+    left: 4px;
+}
+
+.instagram-texto .icono-instagram::after {
+    width: 2px;
+    height: 2px;
+
+    top: 3px;
+    right: 3px;
+}
+
+.instagram-texto p {
     margin: 0;
 
     font-family: Georgia, serif;
-    font-size: 7px;
+    font-size: 8px;
 
     color: #111111;
 }
-.detalles-hero {
-    position: absolute;
-    left: 50px;
-    bottom: 290px;
-    z-index: 2;
 
-    display: flex;
-    align-items: center;
-    gap: 60px;
+@media (max-width: 900px) {
+    .encabezado {
+        grid-template-columns: 190px 1fr 90px;
+        padding: 0 30px;
+    }
+
+    .menu {
+        gap: 30px;
+    }
+
+    .categorias {
+        gap: 25px;
+    }
+
+    .tarjeta {
+        width: 190px;
+        flex-basis: 190px;
+    }
 }
 
-.detalle-hero {
-    display: flex;
-    align-items: center;
-    gap: 10 px;
+@media (max-width: 700px) {
+    .barra-superior {
+        display: none;
+    }
 
-    color: #c89f52;
-}
+    .encabezado {
+        height: auto;
 
-.detalle-hero p {
-    margin: 0;
+        grid-template-columns: 1fr;
 
-    font-family: Georgia, serif;
-    font-size: 11px;
+        gap: 15px;
 
-    color: #c89f52;
-}
+        padding: 15px;
+    }
 
-.icono-regalo,
-.icono-corazon {
-    font-size: 24px;
-    color: #c89f52;
+    .marca {
+        justify-content: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .acciones {
+        justify-content: center;
+    }
+
+    .hero {
+        height: 420px;
+
+        background-position: 62% center;
+    }
+
+    .hero-texto {
+        left: 30px;
+        top: 40px;
+    }
+
+    .hero-texto h2 {
+        font-size: 36px;
+    }
+
+    .detalles-hero {
+        left: 30px;
+        bottom: 20px;
+
+        gap: 25px;
+    }
+
+    .categorias {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .tarjeta {
+        width: 260px;
+        height: 260px;
+
+        flex-basis: 260px;
+    }
+
+    .titulo-descubre {
+        gap: 15px;
+    }
+
+    .titulo-descubre h2 {
+        font-size: 25px;
+    }
+
+    .instagram-inferior {
+        max-width: 90%;
+    }
+
+    .instagram-texto p {
+        font-size: 7px;
+    }
 }
