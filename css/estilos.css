@@ -157,7 +157,7 @@ body{
 
     background-image: url("../img/hero-inicio.jpeg");
     background-size: cover;
-    background-position: center 65%;
+    background-position: center 68%;
     background-repeat: no-repeat;
 
     display: flex;
@@ -218,80 +218,210 @@ body{
 .boton-catalogo:hover {
     background-color: #000000;
 }
+
 .descubre {
     background-color: #f7f0e8;
-    padding: 12px 70px 30px;
+    padding: 4px 0 10px;
 }
 
-.titulo-descubre {
+
+.descubre .frase-marca {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 6px;
+    font-weight: normal;
+    color: #c89f52;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.descubre .titulo-descubre {
+    width: 850px;
+    max-width: 90%;
+    margin: 0 auto 18px;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
 
-    margin-bottom: 18px;
+    gap: 40px;
 }
 
-.titulo-descubre h2 {
+.descubre .titulo-descubre h2 {
+    margin: 0;
+
     font-family: Georgia, serif;
-    font-size: 28px;
+    font-size: 29px;
     font-weight: normal;
+
     white-space: nowrap;
 }
 
-.linea {
-    width: 230px;
-    height: 2px;
+.descubre .titulo-descubre .linea {
+    flex: 1;
+    height: 1.5px;
     background-color: #c89f52;
 }
-.categorias {
-    max-width: 900px;
+
+
+.descubre .categorias {
+    width: 850px;
+    max-width: 90%;
+
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 90px;
-}
-
-.tarjeta {
-    height: 220px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 4px;
-}
-
-.tarjeta img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.tarjeta-info {
-    position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 12px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    gap: 0;
+}
+
+
+.descubre .tarjeta {
+    width: 205px;
+    height: 215px;
+
+    flex: 0 0 205px;
+
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 4px;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.descubre .tarjeta img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.descubre .tarjeta-info {
+    position: absolute;
+
+    left: 12px;
+    right: 10px;
+    bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+
+    margin: 0;
+    padding: 0;
+}
+
+.descubre .tarjeta-info h3 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: normal;
+
     color: white;
 }
 
-.tarjeta-info h3 {
-    font-family: Georgia, serif;
-    font-size: 18px;
-    font-weight: normal;
-}
 
-.tarjeta-info span {
-    width: 25px;
-    height: 25px;
+
+
+.descubre .tarjeta-info span {
+    width: 23px;
+    height: 23px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border: 1px solid white;
     border-radius: 50%;
 
+    font-size: 13px;
+    color: white;
+}
+
+
+
+
+.descubre .instagram-inferior {
+    width: 520px;
+    max-width: 75%;
+
+    margin: 12px auto 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    gap: 22px;
+}
+
+.descubre .linea-instagram {
+    flex: 1;
+    height: 1.5px;
+
+    background-color: #c89f52;
+}
+
+.descubre .instagram-texto {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    white-space: nowrap;
+}
+
+.descubre .instagram-texto p {
+    margin: 0;
+
+    font-family: Georgia, serif;
+    font-size: 7px;
+
+    color: #111111;
+}
+.detalles-hero {
+    position: absolute;
+    left: 50px;
+    bottom: 290px;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.detalle-hero {
+    display: flex;
+    align-items: center;
+    gap: 10 px;
+
+    color: #c89f52;
+}
+
+.detalle-hero p {
+    margin: 0;
+
+    font-family: Georgia, serif;
+    font-size: 11px;
+
+    color: #c89f52;
+}
+
+.icono-regalo,
+.icono-corazon {
+    font-size: 24px;
+    color: #c89f52;
 }
