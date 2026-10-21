@@ -259,7 +259,7 @@ body{
     border-radius: 4px;
 }
 
-.tarjeta img {
+.tarjeta >img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -284,14 +284,9 @@ body{
     font-weight: normal;
 }
 
-.tarjeta-info span {
-    width: 25px;
-    height: 25px;
-
-    border: 1px solid white;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.flecha-icono{
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    color:white;
 }
