@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f0e8;
+    color: #111111;
+}
+
+.barra-superior {
+    height: 28px;
+    background-color: #111111;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 85px;
+
+    font-family: Georgia, serif;
+    font-size: 12px;
+}
+
+.encabezado {
+    height: 108px;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 250px 1fr 120px;
+    align-items: center;
+
+    padding: 0 65px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.marca h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+}
+
+.menu a {
+    color: #111111;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    padding: 8px 0;
+    position: relative;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #c89f52;
+}
+
+.menu a:hover::after,
+.menu .activo::after {
+    width: 100%;
+}
+
+.acciones {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 28px;
+}
+
+.icono-buscar {
+    width: 22px;
+    height: 22px;
+
+    border: 2px solid #111111;
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.icono-buscar::after {
+    content: "";
+
+    width: 9px;
+    height: 2px;
+
+    background-color: #111111;
+
+    position: absolute;
+
+    right: -7px;
+    bottom: -4px;
+
+    transform: rotate(45deg);
+}
+
+.icono-instagram {
+    width: 26px;
+    height: 26px;
+
+    border: 2px solid #111111;
+    border-radius: 7px;
+
+    position: relative;
+}
+
+.icono-instagram::before {
+    content: "";
+
+    width: 9px;
+    height: 9px;
+
+    border: 2px solid #111111;
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 6px;
+    left: 6px;
+}
+
+.icono-instagram::after {
+    content: "";
+
+    width: 3px;
+    height: 3px;
+
+    background-color: #111111;
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 4px;
+    right: 4px;
+}
+
+.hero-catalogo {
+    height: 190px;
+    background-color: #eadbc7;
+
+    position: relative;
+}
+
+.texto-catalogo {
+    position: absolute;
+    left: 65px;
+    top: 38px;
+}
+
+.texto-catalogo h2 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.texto-catalogo h2 span {
+    color: #c89f52;
+}
+
+.texto-catalogo p {
+    font-family: Georgia, serif;
+    font-size: 14px;
+
+    margin-top: 6px;
+}
+
+.buscador {
+    width: 370px;
+    height: 36px;
+
+    margin-top: 15px;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 0 16px;
+
+    border-radius: 3px;
+}
+
+.buscador input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-family: Georgia, serif;
+    font-size: 12px;
+}
+
+.buscador input::placeholder {
+    color: #aaaaaa;
+}
+
+.lupa-buscador {
+    width: 14px;
+    height: 14px;
+
+    border: 1.5px solid #555555;
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.lupa-buscador::after {
+    content: "";
+
+    width: 6px;
+    height: 1.5px;
+
+    background-color: #555555;
+
+    position: absolute;
+
+    right: -5px;
+    bottom: -2px;
+
+    transform: rotate(45deg);
+}
+.hero {
+    height: 320px;
+
+    background-image: url("img/adorno.jpeg");
+    background-size: cover;
+    background-position: center 68%;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
