@@ -160,7 +160,7 @@ body {
 .hero-nosotros {
     height: 300px;
 
-    background-image: url("../img/fondo-nosotros.png");
+    background-image: url("../img/cartera\ coach\ lila.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -188,19 +188,228 @@ body {
 .historia p {
     font-family: Georgia, serif;
     font-size: 9px;
-    line-height: 1.25;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
 }
+.historia > span {
+    display: inline-block;
+    width: fit-content;
 
-.historia span {
-    display: block;
-
-    margin-top: 13px;
-
-    text-align: center;
+    margin-top: 25px;
+    margin-left: 65px;
 
     font-family: Georgia, serif;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
 
-    color: #8d7352;
+    color: rgba(110, 85, 55, 0.75);
+
+    transform: rotate(-12deg) !important;
+    transform-origin: left center;
+}
+.mision-vision {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    margin-top: 16px;
+}
+
+.tarjeta-info-nosotros {
+    width: 390px;
+    height: 58px;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 35px;
+
+    gap: 18px;
+
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.18);
+}
+
+.linea-corta {
+    width: 50px;
+    height: 2px;
+
+    background-color: #c89f52;
+}
+
+.icono-nosotros {
+    color: #c89f52;
+    font-size: 28px;
+}
+
+.tarjeta-info-nosotros h3 {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.tarjeta-info-nosotros p {
+    font-family: Georgia, serif;
+    font-size: 9px;
+
+    color: #777777;
+}
+.valores {
+    margin-top: 18px;
+}
+
+.titulo-valores {
+    width: 820px;
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.titulo-valores span {
+    flex: 1;
+    height: 2px;
+    background-color: #c89f52;
+}
+
+.titulo-valores h2 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.lista-valores {
+    width: 800px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.valor {
+    text-align: center;
+    padding: 10px 20px;
+
+    border-right: 1px solid #cfc5ba;
+}
+
+.valor:last-child {
+    border-right: none;
+}
+
+.icono-valor {
+    color: #c89f52;
+    font-size: 26px;
+
+    margin-bottom: 5px;
+}
+
+.valor h3 {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: normal;
+
+    color: #75685e;
+}
+.boton-nosotros-contenedor {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.boton-nosotros {
+    width: 260px;
+    height: 42px;
+
+    background-color: #111111;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 18px;
+
+    text-decoration: none;
+
+    font-family: Georgia, serif;
+    font-size: 14px;
+
+    border-radius: 2px;
+}
+.pie-nosotros {
+    height: 65px;
+    background-color: #f7f0e8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+    padding: 0 30px;
+}
+
+.linea-pie {
+    height: 2px;
+    background-color: #c89f52;
+
+    flex: 1;
+}
+
+.linea-pie-centro {
+    max-width: 120px;
+}
+
+.marca-pie {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.marca-pie img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+}
+
+.marca-pie h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: normal;
+}
+
+.marca-pie p {
+    font-family: Georgia, serif;
+    font-size: 6px;
+
+    color: #8a8178;
+
+    margin-top: 3px;
+    white-space: nowrap;
+}
+
+.instagram-pie {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    white-space: nowrap;
+}
+
+.instagram-pie p {
+    font-family: Georgia, serif;
+    font-size: 7px;
+}
+
+.instagram-pie .icono-instagram {
+    width: 23px;
+    height: 23px;
 }
