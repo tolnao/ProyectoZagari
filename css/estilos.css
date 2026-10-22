@@ -439,13 +439,7 @@ body {
             invert(69%) sepia(34%) saturate(745%)
             hue-rotate(358deg) brightness(90%) contrast(89%);
 }
-.instagram-header {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
-    cursor: pointer;
-    transition: 0.3s;
-}
+
 .acciones .instagram-header {
     width: 28px;
     height: 28px;
@@ -458,11 +452,22 @@ body {
     cursor: pointer;
 }
 
-.instagram-header:hover {
-    filter: brightness(0) saturate(100%)
-            invert(69%) sepia(34%) saturate(745%)
-            hue-rotate(358deg) brightness(90%) contrast(89%);
+.instagram-header {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
+
+    cursor: pointer;
+
+    transition: 0.3s;
 }
+
+.instagram-header:hover {
+    content: url("../img/icons/ig2.png");
+    transform: scale(1.1);
+}
+
 .buscar-header {
     width: 28px;
     height: 28px;

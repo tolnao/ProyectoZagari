@@ -1,0 +1,677 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f7f3ee;
+    color: #111;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.encabezado {
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 55px;
+
+    background-color: #fff;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.marca h1 {
+    font-size: 27px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.menu a {
+    font-size: 15px;
+    padding: 30px 0 8px;
+
+    position: relative;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #cda556;
+}
+
+
+/* PAGINA ACTIVA */
+
+.menu .activo::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #cda556;
+}
+
+
+/* ICONOS DEL HEADER */
+
+.iconos-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icono-header {
+    width: 27px;
+    height: 27px;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+}
+
+.icono-header:hover {
+    transform: scale(1.1);
+}
+
+
+/* INSTAGRAM NEGRO -> COLOR */
+
+.instagram-icono {
+    transition: 0.3s;
+}
+
+.instagram-icono:hover {
+    content: url("../img/icons/ig2.png");
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   PORTADA CONTACTO
+========================= */
+
+.portada-contacto {
+    width: 100%;
+    height: 350px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.imagen-portada {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* TEXTO ENCIMA DE LA IMAGEN */
+
+.texto-portada {
+    position: absolute;
+
+    top: 55px;
+    left: 9%;
+
+    width: 340px;
+}
+
+.texto-portada h2 {
+    font-size: 48px;
+    line-height: 1.08;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+}
+
+.texto-portada h2 span {
+    display: block;
+
+    color: #cda556;
+
+    margin-top: 8px;
+}
+
+.texto-portada h3 {
+    font-size: 21px;
+    font-weight: normal;
+
+    margin-bottom: 10px;
+}
+
+.texto-portada p {
+    width: 300px;
+
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+
+/* =========================
+   SECCION PRINCIPAL
+========================= */
+
+.seccion-contacto {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 30px auto 45px;
+
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+
+    gap: 60px;
+    align-items: center;
+}
+
+
+/* =========================
+   COLUMNA IZQUIERDA
+========================= */
+
+.datos-contacto {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* TARJETAS */
+
+.tarjeta-contacto {
+    min-height: 67px;
+
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 17px;
+
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.17);
+
+    transition: 0.3s;
+}
+
+.tarjeta-contacto:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+/* INFORMACION */
+
+.informacion-contacto {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.icono-contacto {
+    width: 38px;
+    height: 38px;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+}
+
+.informacion-contacto h3 {
+    font-size: 17px;
+    font-weight: normal;
+
+    margin-bottom: 3px;
+}
+
+.informacion-contacto p {
+    max-width: 215px;
+
+    font-size: 10px;
+    line-height: 1.25;
+
+    color: #555;
+}
+
+
+/* WHATSAPP NEGRO -> COLOR */
+
+.tarjeta-contacto:first-child:hover .icono-contacto {
+    content: url("../img/icons/whatsapp (2).png");
+
+    transform: scale(1.08);
+}
+
+
+/* INSTAGRAM DE TARJETA */
+
+.tarjeta-contacto:nth-child(2):hover .instagram-icono {
+    content: url("../img/icons/ig2.png");
+
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   BOTONES NEGROS
+========================= */
+
+.boton-contacto {
+    min-width: 170px;
+
+    height: 36px;
+
+    background-color: #050505;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 13px;
+
+    border-radius: 3px;
+
+    font-size: 10px;
+
+    transition: 0.3s;
+}
+
+.boton-contacto img {
+    width: 17px;
+    height: 17px;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+}
+
+.boton-contacto:hover {
+    background-color: #cda556;
+}
+
+.boton-contacto:hover img {
+    transform: translateX(4px);
+}
+
+
+/* TARJETAS SIN BOTON */
+
+.tarjeta-simple {
+    justify-content: flex-start;
+}
+
+
+/* =========================
+   ENVIOS
+========================= */
+
+.envios {
+    border: 1.5px solid #cda556;
+
+    padding: 23px 32px;
+
+    background-color: #fffdf9;
+}
+
+
+/* TITULO ENVIO */
+
+.titulo-envios {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #cda556;
+}
+
+.icono-envio {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+}
+
+.titulo-envios h2 {
+    font-size: 21px;
+    font-weight: normal;
+
+    color: #9b7b43;
+}
+
+
+/* INFORMACION DEL ENVIO */
+
+.informacion-envios {
+    margin-top: 12px;
+
+    padding: 5px 15px;
+
+    background-color: #f5f1eb;
+
+    border-radius: 3px;
+}
+
+.fila-envio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #ddd7cf;
+}
+
+.fila-envio:last-child {
+    border-bottom: none;
+}
+
+.fila-envio span {
+    font-size: 12px;
+}
+
+.fila-envio p {
+    font-size: 10px;
+
+    color: #666;
+}
+
+
+/* BOTON DE ENVIO */
+
+.boton-envio {
+    width: 100%;
+    height: 36px;
+
+    margin-top: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 3px;
+
+    font-size: 10px;
+
+    transition: 0.3s;
+}
+
+.boton-envio img {
+    width: 17px;
+    height: 17px;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+}
+
+.boton-envio:hover {
+    background-color: #cda556;
+}
+
+.boton-envio:hover img {
+    transform: translateX(5px);
+}
+
+
+/* AVISO */
+
+.aviso-envio {
+    margin-top: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.icono-info {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+}
+
+.aviso-envio p {
+    font-size: 9px;
+
+    color: #777;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.pie-pagina {
+    min-height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 15px 25px;
+
+    background-color: #f5eee5;
+}
+
+
+/* LINEAS DORADAS */
+
+.linea-footer {
+    flex: 1;
+
+    height: 1px;
+
+    max-width: 160px;
+
+    background-color: #cda556;
+}
+
+
+/* LOGO FOOTER */
+
+.marca-footer {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.logo-footer {
+    width: 40px;
+    height: 40px;
+
+    object-fit: contain;
+}
+
+.marca-footer h2 {
+    font-size: 26px;
+    font-weight: normal;
+
+    letter-spacing: 2px;
+}
+
+.marca-footer p {
+    font-size: 8px;
+
+    color: #999;
+
+    margin-left: 5px;
+}
+
+
+/* INSTAGRAM FOOTER */
+
+.instagram-footer {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+}
+
+.instagram-footer img {
+    width: 27px;
+    height: 27px;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+}
+
+.instagram-footer img:hover {
+    content: url("../img/icons/ig2.png");
+
+    transform: scale(1.1);
+}
+
+.instagram-footer p {
+    font-size: 8px;
+
+    color: #555;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .encabezado {
+        padding: 0 25px;
+    }
+
+    .menu {
+        gap: 25px;
+    }
+
+    .seccion-contacto {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .envios {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .encabezado {
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .menu {
+        gap: 18px;
+    }
+
+    .iconos-header {
+        display: none;
+    }
+
+    .portada-contacto {
+        height: 400px;
+    }
+
+    .texto-portada {
+        left: 30px;
+        top: 60px;
+
+        width: 280px;
+    }
+
+    .texto-portada h2 {
+        font-size: 40px;
+    }
+
+    .tarjeta-contacto {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .boton-contacto {
+        width: 100%;
+    }
+
+    .pie-pagina {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .linea-footer {
+        width: 80%;
+        flex: none;
+    }
+
+    .marca-footer {
+        flex-direction: column;
+    }
+
+}
