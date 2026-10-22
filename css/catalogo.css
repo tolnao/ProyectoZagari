@@ -163,7 +163,10 @@ body {
 
 .hero-catalogo {
     height: 190px;
-    background-color: #eadbc7;
+    background-image: url("../img/adorno.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     position: relative;
 }
@@ -248,13 +251,169 @@ body {
 
     transform: rotate(45deg);
 }
-.hero {
-    height: 320px;
+.filtros-catalogo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 
-    background-image: url("img/adorno.jpeg");
-    background-size: cover;
-    background-position: center 68%;
-    background-repeat: no-repeat;
+    padding-left: 49px;
+
+    margin-top: -16px;
 
     position: relative;
+    z-index: 2;
+}
+
+.filtro {
+    width: 130px;
+    height: 45px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #eee6dc;
+
+    font-family: Georgia, serif;
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.filtro-grande {
+    width: 195px;
+}
+
+.activo-filtro {
+    background-color: #c89f52;
+    color: white;
+}
+.productos-catalogo {
+    padding: 15px 28px;
+}
+
+.lista-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+}
+
+.producto {
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.producto img {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    display: block;
+}
+
+.producto-info {
+    padding: 8px 7px;
+}
+
+.producto-info h3 {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+
+.producto-info p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    color: #777777;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.boton-producto {
+    height: 38px;
+
+    background-color: black;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 12px;
+
+    text-decoration: none;
+
+    font-family: Georgia, serif;
+    font-size: 14px;
+
+    border-radius: 2px;
+}
+.pie-catalogo {
+    height: 65px;
+    background-color: #f7f0e8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 0 30px;
+}
+
+.linea-pie {
+    height: 2px;
+    background-color: #c89f52;
+    flex: 1;
+}
+
+.linea-pie-centro {
+    max-width: 120px;
+}
+
+.marca-pie {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.marca-pie img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.marca-pie h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: normal;
+}
+
+.marca-pie p {
+    font-family: Georgia, serif;
+    font-size: 6px;
+    color: #8a8178;
+
+    margin-top: 3px;
+
+    white-space: nowrap;
+}
+
+.instagram-pie {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    white-space: nowrap;
+}
+
+.instagram-pie p {
+    font-family: Georgia, serif;
+    font-size: 7px;
+}
+
+.instagram-pie .icono-instagram {
+    width: 23px;
+    height: 23px;
 }
