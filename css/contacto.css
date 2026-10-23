@@ -276,7 +276,7 @@ a {
 /* WHATSAPP NEGRO -> COLOR */
 
 .tarjeta-contacto:first-child:hover .icono-contacto {
-    content: url("../img/icons/whatsapp (2).png");
+    content: url("../img/icons/whatsapp\ \(2\).png";
 
     transform: scale(1.08);
 }
