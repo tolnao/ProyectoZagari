@@ -67,8 +67,6 @@ a {
 }
 
 
-/* PAGINA ACTIVA */
-
 .menu .activo::after {
     content: "";
 
@@ -83,8 +81,6 @@ a {
     background-color: #cda556;
 }
 
-
-/* ICONOS DEL HEADER */
 
 .iconos-header {
     display: flex;
@@ -106,8 +102,6 @@ a {
 }
 
 
-/* INSTAGRAM NEGRO -> COLOR */
-
 .instagram-icono {
     transition: 0.3s;
 }
@@ -117,10 +111,6 @@ a {
     transform: scale(1.1);
 }
 
-
-/* =========================
-   PORTADA CONTACTO
-========================= */
 
 .portada-contacto {
     width: 100%;
@@ -183,10 +173,6 @@ a {
 }
 
 
-/* =========================
-   SECCION PRINCIPAL
-========================= */
-
 .seccion-contacto {
     width: 90%;
     max-width: 1200px;
@@ -201,10 +187,6 @@ a {
 }
 
 
-/* =========================
-   COLUMNA IZQUIERDA
-========================= */
-
 .datos-contacto {
     display: flex;
     flex-direction: column;
@@ -212,8 +194,6 @@ a {
     gap: 12px;
 }
 
-
-/* TARJETAS */
 
 .tarjeta-contacto {
     min-height: 67px;
@@ -282,18 +262,12 @@ a {
 }
 
 
-/* INSTAGRAM DE TARJETA */
-
 .tarjeta-contacto:nth-child(2):hover .instagram-icono {
     content: url("../img/icons/ig2.png");
 
     transform: scale(1.08);
 }
 
-
-/* =========================
-   BOTONES NEGROS
-========================= */
 
 .boton-contacto {
     min-width: 170px;
@@ -334,16 +308,10 @@ a {
 }
 
 
-/* TARJETAS SIN BOTON */
-
 .tarjeta-simple {
     justify-content: flex-start;
 }
 
-
-/* =========================
-   ENVIOS
-========================= */
 
 .envios {
     border: 1.5px solid #cda556;
@@ -352,9 +320,6 @@ a {
 
     background-color: #fffdf9;
 }
-
-
-/* TITULO ENVIO */
 
 .titulo-envios {
     display: flex;
@@ -381,8 +346,6 @@ a {
     color: #9b7b43;
 }
 
-
-/* INFORMACION DEL ENVIO */
 
 .informacion-envios {
     margin-top: 12px;
@@ -418,9 +381,6 @@ a {
 
     color: #666;
 }
-
-
-/* BOTON DE ENVIO */
 
 .boton-envio {
     width: 100%;
@@ -461,9 +421,6 @@ a {
     transform: translateX(5px);
 }
 
-
-/* AVISO */
-
 .aviso-envio {
     margin-top: 13px;
 
@@ -488,10 +445,6 @@ a {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
-
 .pie-pagina {
     min-height: 90px;
 
@@ -507,8 +460,6 @@ a {
 }
 
 
-/* LINEAS DORADAS */
-
 .linea-footer {
     flex: 1;
 
@@ -518,9 +469,6 @@ a {
 
     background-color: #cda556;
 }
-
-
-/* LOGO FOOTER */
 
 .marca-footer {
     display: flex;
@@ -552,8 +500,6 @@ a {
 }
 
 
-/* INSTAGRAM FOOTER */
-
 .instagram-footer {
     display: flex;
     align-items: center;
@@ -581,11 +527,6 @@ a {
 
     color: #555;
 }
-
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 900px) {
 
@@ -674,4 +615,101 @@ a {
         flex-direction: column;
     }
 
+}
+@media (max-width: 600px) {
+
+    .barra-superior {
+        height: auto;
+        padding: 8px 15px;
+        gap: 10px;
+
+        font-size: 9px;
+    }
+
+    .encabezado {
+        padding: 15px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .marca h1 {
+        font-size: 25px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .hero {
+        height: 420px;
+    }
+
+    .hero-texto {
+        left: 25px;
+        top: 40px;
+    }
+
+    .hero-texto h2 {
+        font-size: 32px;
+    }
+
+    .detalles-hero {
+        left: 25px;
+        gap: 25px;
+    }
+
+    .lista-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .filtros-catalogo {
+        padding: 15px;
+        margin-top: 0;
+
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .mision-vision {
+        flex-direction: column;
+
+        padding: 0 20px;
+    }
+
+    .tarjeta-info-nosotros {
+        width: 100%;
+    }
+
+    .titulo-valores {
+        width: 90%;
+        gap: 15px;
+    }
+
+    .lista-valores {
+        width: 90%;
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .valor {
+        border-right: none;
+    }
+
+    .pie-nosotros,
+    .pie-catalogo {
+        height: auto;
+
+        flex-direction: column;
+
+        padding: 20px;
+        gap: 10px;
+    }
 }
